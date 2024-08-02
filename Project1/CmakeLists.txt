@@ -1,0 +1,26 @@
+cmake_minimum_required(VERSION 3.10)
+
+# Set the project name
+project(FishingGame)
+
+# Set the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Include directories
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+# Add executable target with source files
+add_executable(FishingGame 
+    Main.cpp 
+    Aquarium.cpp 
+    BeginGame.cpp 
+    CreateChar.cpp 
+    FishingACT.cpp 
+    Shop.cpp
+    include/Aquarium.h
+    include/BeginGame.h
+    include/CreateChar.h
+    include/FishingACT.h
+    include/Shop.h
+)
